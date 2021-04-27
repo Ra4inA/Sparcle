@@ -1,0 +1,434 @@
+/*fonts*/
+
+@import "fonts.css";
+
+
+/*Specification*/
+
+
+*:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+body{
+	font-family: "Avenir Next LT Pro", "Arial", sans-serif;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.02em;
+	font-size: 24px;
+	color: #fff;
+	transition: all 0.5 ease;
+	font-weight: 100;
+	line-height: 1.5em;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1170px;
+	width: 95%;
+	height: 100%;
+}
+
+.div, p, form, input, a, span, button{
+	box-sizing: border-box;
+}
+
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	line-height: 1.2em;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+}
+
+h1{
+	font-size: 65px;
+	color: #fff;
+	font-weight: 700;
+	text-align: left;
+	line-height: 70px;
+}
+
+h2{
+	font-size: 30px;
+	color: #20203a;
+}
+
+h3{
+	font-size: 24px;
+	color: #fff;
+	font-weight: Demi;
+}
+
+
+
+h4{
+	font-size: 13px;
+	font-weight: 400;
+}
+
+/*h5{
+	font-size: 15px;
+	color: #fff;
+	font-weight: 800;
+}*/
+
+a, a:hover, a:active{
+	text-decoration: none;
+	color: inherit;
+}
+
+.btn{
+	color: #f45e1f;
+	font-size: 15px;
+	font-weight: 1000;
+	background-color: #fff9f6;
+  	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+  	line-height: 1.2;
+  	width: 160px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.align-center{
+	align-items: center;
+}
+
+.space-between{
+	justify-content: space-between;
+}
+
+.space-around{
+	justify-content: space-around;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+/*Header*/
+
+
+header{
+	background-image: url(../img/header-bg.png);
+	background-repeat: no-repeat;
+	background-color: #bbb;
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-position: center;
+}
+
+.header__container{
+	flex-direction: column;
+}
+
+.head{
+	align-items: center;
+}
+
+.logo{
+
+}
+
+.logo__img{
+
+}
+
+.nav__list{
+
+}
+
+.nav__item{
+	
+}
+
+.nav__link{
+	font-size: 15px;
+	font-weight: 1000;
+	padding: 30px;
+}
+
+.request{}
+
+.offer{
+	width: 700px;
+	margin-left: 6%;
+	margin-top: 4%;
+}
+
+.offer__text{
+	text-align: left;
+	font-weight: 400;
+	font-size: 15px;
+	color: #fff;
+	width: 430px;
+	line-height: 25px;
+	margin: 7px 0 50px;
+}
+
+.btn_get-started{
+	display: inline-block;
+}
+
+.btn_locations{
+	display: inline-block;
+	margin-left: 25px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.pin{
+	margin-right: 8px;
+}
+
+.learn{
+	margin-left: 6%;
+	width: 65%;
+	align-items: center;
+	margin-bottom: -2%;
+}
+
+.learn:hover .learn__line{
+	background-color: #eabe28;
+}
+
+.learn:hover .learn__text{
+	color: #eabe28;
+}
+
+.learn:hover .learn__arrow{
+	color: #eabe28;
+}
+.learn:hover .learn__circle{
+	border-color: #eabe28;
+}
+
+.learn__text{
+	margin-right: 5%;
+	font-size: 12px;
+	font-weight: 1000;
+	text-transform: uppercase;
+}
+
+.learn__line {
+	content: "";
+  	background-color: #fff;
+  	opacity: 0.4;
+  	height: 1px;
+  	width: 60%;
+}
+
+.learn__circle{
+	width: 60px;
+	height: 60px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	align-items: center;
+	position: relative;
+}
+
+.learn__arrow{
+	position: absolute;
+	left: calc(50% - 7.5px);
+	top: calc(50% - 12px);
+}
+
+.scroll{
+	width: 100%;
+	background-color: #fafbfd;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 48px;
+	font-weight: 1000;
+	height: 48px;
+	color: #b4b4b4;
+}
+
+#menu__toggle{
+	opacity: 0;
+	position: absolute;
+	top: 1px;
+}
+
+
+@media screen and (max-width: 1030px){
+
+
+		/*Header*/
+
+
+	.nav__link{
+		padding: 15px;
+	}
+}
+
+
+
+@media screen and (max-width: 860px){
+
+
+	/*Header*/
+
+
+/* стилизуем кнопку */
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #26EFDD;
+    transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+
+
+/* контейнер меню */
+nav {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.nav__list{
+	display: block;
+	height: 100%;
+}
+/* элементы меню */
+.nav__item {
+	align-items: center;
+	width: 100%;
+	color: #555;
+	font-size: 16vh;
+	transition-duration: .25s;
+}
+.nav__item:hover {
+  background-color: #CFD8DC;
+}
+
+.nav__link{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ nav {
+  visibility: visible;
+  left: 0;
+}
+
+.offer{
+	width: 100%;
+	margin: auto;
+}
+h1{
+	text-align: center;
+	font-size: 8vw;
+	line-height: 7vw;
+	margin-bottom: 20px;
+}
+
+.learn{
+	margin-bottom: 10%;
+}
+
+.learn__line{
+	width: 15vw;
+}
+
+}
+
+
+@media screen and (max-width: 500px){
+
+
+	/*Header*/
+
+
+	.offer__text{
+		font-size: 4vw;
+		line-height: 5vw;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	
+	.btn_get-started{
+		display: block;	
+		margin: auto;
+	}
+
+	.btn_locations{
+		display: block;	
+		margin: 20px auto 0 auto;
+	}
+
+}
