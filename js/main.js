@@ -27,6 +27,12 @@ let showMenu = function(){
 	if(i==2){i=0;}
 	console.log(i)
 }
+
+$(window).ready(function(){
+	if($(window).width() < 861){
+		$('nav').append($('.btn-request'));
+	}
+});
 $(window).resize(function(){
 	if($body.width() > 860){
 		$body.css({
@@ -35,15 +41,19 @@ $(window).resize(function(){
 		$nav.css({"left": "-300px"});
 		$toggle.prop("checked", false);
 		i=0;
+
+
+		$('.head').append($('.btn-request'));
 	}
+
 	else {
 
+
+		$('nav').append($('.btn-request'));
 	}
+	
+
 });
 
 $(".menu__btn").on("click", showMenu);
 
-
-		$("btn-request").on("slick", function(){
-			$("btn-request").insertBefore("nav");
-		});
