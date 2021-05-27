@@ -16,8 +16,6 @@
 
 body{
 	font-family: "Avenir Next LT Pro", "Arial", sans-serif;
-	padding: 0;
-	margin: 0;
 	letter-spacing: 0.02em;
 	font-size: 14px;
 	color: #b4b4b4;
@@ -25,7 +23,11 @@ body{
 	font-weight: 100;
 	line-height: 1.5em;
 	background-color: #fff;
+	width: 100vw;
 	overflow-x: hidden;
+
+	margin: 0;
+	padding: 0 15px 0 0; /*Отступ от полосы прокрутки*/
 }
 
 .container{
@@ -90,7 +92,7 @@ h4{
 	font-size: 15px;
 	color: #fff;
 	font-weight: 800;
-}*/
+}
 
 a, a:hover, a:active{
 	text-decoration: none;
@@ -113,11 +115,6 @@ a, a:hover, a:active{
 
 
 /*Header*/
-	body {
-
-		width: 100vw;
-		overflow-x: hidden;
-	}
 
 header{
 	background-image: url(../img/header-bg.jpg);
