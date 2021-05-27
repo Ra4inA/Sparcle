@@ -113,7 +113,11 @@ a, a:hover, a:active{
 
 
 /*Header*/
+	body {
 
+		width: 100vw;
+		overflow-x: hidden;
+	}
 
 header{
 	background-image: url(../img/header-bg.png);
@@ -135,6 +139,13 @@ header .container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+#menu__toggle{
+	opacity: 0;
+	position: fixed;
+	top: 1px;
+	pointer-events: none;
 }
 
 .nav__list {
@@ -163,11 +174,11 @@ header .container{
 	margin: 7px 0 50px;
 }
 
-.btn_get-started{
+.get-started-btn{
 	display: inline-block;
 }
 
-.btn_locations{
+.locations-btn{
 	display: inline-block;
 	margin-left: 25px;
 	background: transparent;
@@ -228,8 +239,9 @@ header .container{
 
 .learn__arrow{
 	position: absolute;
-	left: calc(50% - 7.5px);
-	top: calc(50% - 12px);
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .scroll{
@@ -242,12 +254,6 @@ header .container{
 	font-weight: 600;
 	height: 48px;
 	color: #b4b4b4;
-}
-
-#menu__toggle{
-	opacity: 0;
-	position: absolute;
-	top: 1px;
 }
 
 
@@ -372,6 +378,7 @@ header .container{
 .become {
 	background-color: #f6f7fb;
 	padding-bottom: 85px;
+	position: relative;
 }
 .become__content {
 	display: flex;
@@ -455,6 +462,15 @@ header .container{
 	/*Header*/
 
 	
+	.head {
+		position: relative;
+		justify-content: center;
+	}
+
+	.btn-request {
+		position: absolute;
+		right: 0;
+	}
 	/* стилизуем кнопку */
 	/* скрываем чекбокс */
 	#menu__toggle {
@@ -481,7 +497,7 @@ header .container{
 	  width: 100%;
 	  height: 2px;
 	  background-color: #26EFDD;
-	    transition-duration: .25s;
+	  transition-duration: .2s;
 	}
 	.menu__btn > span::before {
 	  content: '';
@@ -492,24 +508,23 @@ header .container{
 	  top: 8px;
 	}
 	
+
 	
 	
 	/* контейнер меню */
 	nav {
 	  display: block;
 	  position: fixed;
-	  visibility: hidden;
 	  top: 0;
-	  left: -100%;
+	  left: -300px;
 	  width: 300px;
 	  height: 100%;
-	  margin: 0;
 	  padding: 80px 0;
 	  list-style: none;
 	  text-align: center;
 	  background-color: #ECEFF1;
 	  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-	  transition-duration: .25s;
+	  border-right: 10px solid #f45e1f;
 	}
 	
 	.nav__list{
@@ -545,11 +560,7 @@ header .container{
 	  top: 0;
 	  transform: rotate(90deg);
 	}
-	#menu__toggle:checked ~ nav {
-	  visibility: visible;
-	  left: 0;
-	}
-	
+
 	.offer{
 		width: 100%;
 		margin: auto;
@@ -562,12 +573,14 @@ header .container{
 	}
 	
 	.learn{
-		margin-top: 1%;
-		margin-bottom: 10%;
+/*		margin-top: 1%;*/
+		margin: 1% auto 10% auto;
+		width: 90%;
+		max-width: 526px;
 	}
 	
 	.learn__line{
-		width: 15vw;
+		width: 30vw;
 	}
 }
 
@@ -614,12 +627,12 @@ header .container{
 	}
 
 	
-	.btn_get-started{
+	.get-started-btn{
 		display: block;	
 		margin: auto;
 	}
 
-	.btn_locations{
+	.locations-btn{
 		display: block;	
 		margin: 20px auto 0 auto;
 	}
