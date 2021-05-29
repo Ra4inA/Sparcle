@@ -23,15 +23,16 @@ let showMenu = function(){
 		);
 		$toggle.prop("checked", true);
 	}
-	i = i+1;
+	i++;
 	if(i==2){i=0;}
-	console.log(i)
 }
-
+let $height;
 $(window).ready(function(){
+	$height = $(".footer__column__content").height();
 	if($(window).width() < 861){
 		$('nav').append($('.btn-request'));
-	}
+	};
+	$height = $(".footer__column__content").height();
 });
 $(window).resize(function(){
 	if($body.width() > 860){
@@ -44,11 +45,8 @@ $(window).resize(function(){
 
 
 		$('.head').append($('.btn-request'));
-	}
 
-	else {
-
-
+	} else {
 		$('nav').append($('.btn-request'));
 	}
 	
@@ -91,3 +89,22 @@ $("input, .number__button").on("change click", function(){
 		return ($typePrice + readValue($("#count-bedrooms")) * 15.44 + readValue($("#count-bathrooms")) * 10.47).toFixed(2);
 	});
 });
+
+
+// ===============================================
+
+$(".footer__column__title").on("click", function(){
+	let asd ;
+	if($(this).next().height() == 0){
+		$(this).next().animate({
+			"height": $height,
+		});
+	} else {
+		$(this).next().animate({
+			"height": "0px",
+		});
+	};
+});
+
+
+
