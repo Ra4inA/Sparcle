@@ -1405,6 +1405,10 @@ h2.footer__column__title {
 label._animate {
 	transition-duration: 0s;
 }
+
+.offer._animate {
+	transition-delay: .4s;
+}
 ._animate-left {
 	transform: translateX(-100px);
 }

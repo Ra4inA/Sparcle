@@ -127,6 +127,7 @@ $("footer ._right-anim li").addClass("_animate _animate-right");
 
 	$(".book ._animate").addClass("_anim-no-hide");
 	const animItems = document.querySelectorAll("._animate");
+	$(window).scrollTop(1);
 	$(window).on("scroll", function(){
 		for (let index = 0; index < animItems.length; index++){
 			if($(window).scrollTop() + $(window).height() > $(animItems[index]).offset().top + $(animItems[index]).height() / 2 
