@@ -94,7 +94,6 @@ $("input, .number__button").on("change click", function(){
 // ===============================================
 
 $(".footer__column__title").on("click", function(){
-	let asd ;
 	if($(this).next().height() == 0){
 		$(this).next().animate({
 			"height": $height,
