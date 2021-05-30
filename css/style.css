@@ -415,6 +415,7 @@ header .container{
 
 .way {
 	padding: 130px 0 150px;
+	overflow-x: hidden;
 }
 .way .container {
 
@@ -518,6 +519,7 @@ header .container{
 	padding: 160px 0;
 	margin-bottom: 150px;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .book .container {
@@ -1416,4 +1418,16 @@ label._animate {
 ._animate-Active {
 	transform: translateX(0);
 	opacity: 1;
+}
+
+
+.jspTrack {
+    background: #b46868;
+    position: relative;
+}
+
+.jspDrag {
+    background: #c43232;
+    position: relative;
+    cursor: pointer;
 }

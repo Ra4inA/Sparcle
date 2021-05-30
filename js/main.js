@@ -137,3 +137,4 @@ $("footer ._right-anim li").addClass("_animate _animate-right");
 			}
 		}
 });
+
