@@ -128,7 +128,7 @@ header{
 	background-repeat: no-repeat;
 	background-color: #bbb;
 	height: 100vh;
-	width: calc(100vw - 15px);
+	width: 100vw;
 	background-size: cover;
 	background-position: center;
 	padding-top: 5px;
