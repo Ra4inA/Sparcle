@@ -93,6 +93,22 @@ $("input, .number__button").on("change click", function(){
 
 // ===============================================
 
+
+$('.testimonials__slider').slick({
+	arrows: false,
+	infinite: false,
+	slidesToShow: 1,
+	responsive: [{
+            breakpoint: 500,
+            settings: {
+             	slidesToShow: 1,
+            }
+        }, ]
+}
+);
+
+
+// ===============================================
 $(".footer__column__title").on("click", function(){
 	if($(this).next().height() == 0){
 		$(this).next().animate({
@@ -106,4 +122,18 @@ $(".footer__column__title").on("click", function(){
 });
 
 
-
+$("footer ._left-anim li").addClass("_animate _animate-left");
+$("footer ._right-anim li").addClass("_animate _animate-right");
+$(".testimonial").addClass("_animate _animate-right");
+	$(".book ._animate").addClass("_anim-no-hide");
+	const animItems = document.querySelectorAll("._animate");
+	$(window).on("scroll", function(){
+		for (let index = 0; index < animItems.length; index++){
+			if($(window).scrollTop() + $(window).height() > $(animItems[index]).offset().top + $(animItems[index]).height() / 2 
+				& $(window).scrollTop() < $(animItems[index]).offset().top + $(animItems[index]).height() / 2){
+				$(animItems[index]).addClass("_animate-Active");
+			} else {
+				if($(animItems[index]).hasClass("_anim-no-hide") !== true){$(animItems[index]).removeClass("_animate-Active");}
+			}
+		}
+});

@@ -713,6 +713,75 @@ input[type=number]::-webkit-outer-spin-button {
 	margin-left: -45px;
 }
 
+/*===================================*/
+	/*Testimonials*/
+
+.testimonials {
+	background-color: #f6f7fb;
+	padding: 160px 0 80px;
+	
+}
+
+.testimonials > .container {
+	width: 100vw;
+	max-width: 1630px;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+.testimonials >  .container {
+	padding: 25px 0;
+}
+.testimonials__title {
+	margin-bottom: 60px;
+}
+.testimonials__slider {
+	padding: 25px 0;
+}
+.testimonial {
+	flex: 0 1 400px;
+	padding: 50px 30px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+}
+.testimonial__img {
+	margin-bottom: 20px;
+}
+.testimonial-img {}
+	
+.testimonial__text {
+	color: #273164;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	flex: 1 1 auto;
+}
+.testimonial__author {}
+.author__name {
+	font-size: 15px;
+	font-weight: 600;
+	color: #f45e1f;
+}
+.author__city {
+	color: #b4b4b4;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.slick-list {
+	transform: translateX(240px);
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+/* Слайд */
+.slick-slide{
+	margin-right: 100px;
+}
 
 /*===================================*/
 	/*Feedback*/
@@ -817,10 +886,10 @@ h2.footer__column__title {
 	flex: 1 1 auto;
 }
 
-/*.social::before {
+.social::before {
 	content: "";
 	flex: 1 1 auto;
-}*/
+}
 
 .footer__item:last-child {
 	margin: 0;
@@ -862,6 +931,17 @@ h2.footer__column__title {
 .copyright br {
 	display: none;
 }
+
+@media(max-width: 1630px) {
+	.testimonials > .container {
+		max-width: 1170px;
+		width: 100%;
+	}
+	.slick-list {
+		transform: translateX(0);
+	}
+}
+
 @media(max-width: 1170px) {
 
 
@@ -1178,6 +1258,18 @@ h2.footer__column__title {
 		max-width: 80%;
 	}
 
+	/*Testimonials*/
+
+	.testimonial {
+		flex: 0 1 auto;
+		margin: 0 10px;
+		padding: 20px 15px;
+	}
+
+	.testimonial__text {
+		margin-bottom: 20px;
+	}
+
 
 	/*Feedback*/
 
@@ -1197,3 +1289,23 @@ h2.footer__column__title {
 }
 
 
+
+._animate {
+	transition: all 0.5s ease;
+	opacity: 0;
+}
+
+._animate-left {
+	transform: translateX(-100px);
+}
+
+._animate-right {
+	transform: translateX(100px);
+}
+._animate-top {
+	transform: translateY(100%);	
+}
+._animate-Active {
+	transform: translateX(0);
+	opacity: 1;
+}
