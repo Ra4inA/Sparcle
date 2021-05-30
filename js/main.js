@@ -28,7 +28,6 @@ let showMenu = function(){
 }
 let $height;
 $(window).ready(function(){
-	$height = $(".footer__column__content").height();
 	if($(window).width() < 861){
 		$('nav').append($('.btn-request'));
 	};
