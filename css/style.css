@@ -1423,15 +1423,3 @@ label._animate {
 	transform: translateX(0);
 	opacity: 1;
 }
-
-
-.jspTrack {
-    background: #b46868;
-    position: relative;
-}
-
-.jspDrag {
-    background: #c43232;
-    position: relative;
-    cursor: pointer;
-}
