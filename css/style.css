@@ -28,6 +28,10 @@ body{
 	overflow-x: hidden;
 }
 
+section, form{
+	overflow-x: hidden;
+}
+
 .container{
 	margin: 0 auto;
 	padding: 0 25px;
@@ -116,12 +120,28 @@ a, a:hover, a:active{
 	background-color: transparent;
 	color: #fff;
 }
-/*Header*/
-	body {
 
-		width: 100vw;
-		overflow-x: hidden;
-	}
+.layer0 {
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	position: fixed;
+}
+
+.layer0._animate {
+	opacity: 1;
+	background-color: #fff;
+	transition-duration: .7s;
+}
+
+.layer0._animate-Active {
+	background-color: transparent;
+}
+/*Header*/
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
 
 header{
 	background-image: url(../img/header-bg.jpg);
@@ -454,6 +474,7 @@ header .container{
 	background-color: #f6f7fb;
 	padding-bottom: 85px;
 	position: relative;
+	overflow-x: visible;
 }
 .become__content {
 	display: flex;
@@ -486,6 +507,7 @@ header .container{
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
+
 .become__title {
 	margin-bottom: 20px;
 }
@@ -906,6 +928,10 @@ input[type=number]::-webkit-outer-spin-button {
 /*=================================================*/
 	/*Footer*/
 
+footer {
+	overflow-x: hidden;
+}
+
 .column__container {
 	display: flex;
 	justify-content: space-between;
@@ -1133,6 +1159,11 @@ h2.footer__column__title {
 	.nav__list{
 		flex: 1 1 auto;
 		display: block;
+	}
+
+	.nav__list._animate-top{
+		opacity: 1;
+		transform: none;
 	}
 	/* элементы меню */
 	.nav__link {
@@ -1418,6 +1449,6 @@ label._animate {
 	transform: translateY(100%);	
 }
 ._animate-Active {
-	transform: translateX(0);
+	transform: translate(0);
 	opacity: 1;
 }
