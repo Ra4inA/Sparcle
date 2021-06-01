@@ -123,8 +123,7 @@ $(".footer__column__title").on("click", function(){
 
 $("footer ._left-anim li").addClass("_animate _animate-left");
 $("footer ._right-anim li").addClass("_animate _animate-right");
-// $(".testimonial").addClass("_animate _animate-right");
-
+$(".testimonial").addClass("_animate _animate-right");
 	$(".book ._animate").addClass("_anim-no-hide");
 	const animItems = document.querySelectorAll("._animate");
 	$(window).scrollTop(1);
@@ -138,4 +137,3 @@ $("footer ._right-anim li").addClass("_animate _animate-right");
 			}
 		}
 });
-

@@ -415,7 +415,6 @@ header .container{
 
 .way {
 	padding: 130px 0 150px;
-	overflow-x: hidden;
 }
 .way .container {
 
@@ -519,7 +518,6 @@ header .container{
 	padding: 160px 0;
 	margin-bottom: 150px;
 	position: relative;
-	overflow-x: hidden;
 }
 
 .book .container {
