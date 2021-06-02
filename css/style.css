@@ -28,10 +28,6 @@ body{
 	overflow-x: hidden;
 }
 
-section, form{
-	overflow-x: hidden;
-}
-
 .container{
 	margin: 0 auto;
 	padding: 0 25px;
@@ -932,10 +928,6 @@ input[type=number]::-webkit-outer-spin-button {
 /*=================================================*/
 	/*Footer*/
 
-footer {
-	overflow-x: hidden;
-}
-
 .column__container {
 	display: flex;
 	justify-content: space-between;
@@ -1163,11 +1155,6 @@ h2.footer__column__title {
 	.nav__list{
 		flex: 1 1 auto;
 		display: block;
-	}
-
-	.nav__list._animate-top{
-		opacity: 1;
-		transform: none;
 	}
 	/* элементы меню */
 	.nav__link {
