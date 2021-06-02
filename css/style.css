@@ -126,6 +126,8 @@ a, a:hover, a:active{
 	height: 100vh;
 	pointer-events: none;
 	position: fixed;
+
+	display: none;
 }
 
 .layer0._animate {
