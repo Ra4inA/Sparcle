@@ -122,8 +122,6 @@ a, a:hover, a:active{
 	height: 100vh;
 	pointer-events: none;
 	position: fixed;
-
-	display: none;
 }
 
 .layer0._animate {
@@ -135,6 +133,7 @@ a, a:hover, a:active{
 .layer0._animate-Active {
 	background-color: transparent;
 }
+
 /*Header*/
 body {
 	width: 100vw;
@@ -474,7 +473,6 @@ header .container{
 	background-color: #f6f7fb;
 	padding-bottom: 85px;
 	position: relative;
-	overflow-x: visible;
 }
 .become__content {
 	display: flex;
@@ -507,7 +505,6 @@ header .container{
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
-
 .become__title {
 	margin-bottom: 20px;
 }
@@ -1408,6 +1405,8 @@ h2.footer__column__title {
 }
 
 @media(max-height: 650px) {
+
+	
 	.scroll {
 		display: none;
 	}
@@ -1440,8 +1439,6 @@ label._animate {
 	transform: translateY(100%);	
 }
 ._animate-Active {
-	transform: translate(0);
+	transform: translateX(0);
 	opacity: 1;
-	transition-duration: 0s !important;
-	transition-delay: 0s !important;
 }
