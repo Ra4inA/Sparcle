@@ -137,3 +137,5 @@ $(".testimonial").addClass("_animate _animate-right");
 			}
 		}
 });
+
+$("_animate").addClass("_animate-Active _anim-no-hide");
