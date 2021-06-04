@@ -116,27 +116,7 @@ a, a:hover, a:active{
 	background-color: transparent;
 	color: #fff;
 }
-<<<<<<< HEAD
 
-.layer0 {
-	width: 100vw;
-	height: 100vh;
-	pointer-events: none;
-	position: fixed;
-}
-
-.layer0._animate {
-	opacity: 1;
-	background-color: #fff;
-	transition-duration: .7s;
-}
-
-.layer0._animate-Active {
-	background-color: transparent;
-}
-
-=======
->>>>>>> parent of 896589d (Final commit (I belive))
 /*Header*/
 	body {
 
