@@ -117,6 +117,31 @@ a, a:hover, a:active{
 	color: #fff;
 }
 
+.layer0 {
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	position: fixed;
+}
+
+.layer0._animate {
+	opacity: 1;
+	background-color: #fff;
+	transition-duration: .7s;
+}
+
+.layer0._animate-Active {
+	background-color: transparent;
+}
+
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+/*Header*/
+
+
 header{
 	background-image: url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
