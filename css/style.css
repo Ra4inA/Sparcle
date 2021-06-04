@@ -198,10 +198,6 @@ header .container{
 	transform: translateY(0);
 }
 
-/*nav {
-	box-sizing: border-box;
-}*/
-
 .nav__list {
 	display: flex;
 	justify-content: space-between;
