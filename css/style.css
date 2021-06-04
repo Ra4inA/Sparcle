@@ -138,6 +138,11 @@ a, a:hover, a:active{
 =======
 >>>>>>> parent of 896589d (Final commit (I belive))
 /*Header*/
+	body {
+
+		width: 100vw;
+		overflow-x: hidden;
+	}
 
 header{
 	background-image: url(../img/header-bg.jpg);
