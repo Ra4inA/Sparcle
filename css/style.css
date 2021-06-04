@@ -135,10 +135,6 @@ a, a:hover, a:active{
 }
 
 /*Header*/
-body {
-	width: 100vw;
-	overflow-x: hidden;
-}
 
 header{
 	background-image: url(../img/header-bg.jpg);
