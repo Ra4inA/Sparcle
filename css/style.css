@@ -90,12 +90,6 @@ h4{
 	color: #f45e1f;
 }
 
-/*h5{
-	font-size: 15px;
-	color: #fff;
-	font-weight: 800;
-}*/
-
 a, a:hover, a:active{
 	text-decoration: none;
 }
@@ -120,12 +114,11 @@ a, a:hover, a:active{
 	background-color: transparent;
 	color: #fff;
 }
-/*Header*/
-	body {
 
-		width: 100vw;
-		overflow-x: hidden;
-	}
+body {
+	width: 100vw;
+	overflow-x: hidden;
+}
 .layer0 {
 	width: 100vw;
 	height: 100vh;
@@ -142,11 +135,9 @@ a, a:hover, a:active{
 .layer0._animate-Active {
 	background-color: transparent;
 }
+
+
 /*Header*/
-body {
-	width: 100vw;
-	overflow-x: hidden;
-}
 
 header{
 	background-image: url(../img/header-bg.jpg);
@@ -178,9 +169,11 @@ header .container{
 	top: 1px;
 	pointer-events: none;
 }
+
 .logo {
 	position: relative;
 }
+
 .logo:after{
 	content: "";
 	position: absolute;
@@ -193,6 +186,7 @@ header .container{
 	opacity: 0;
 	transition: all .2s ease;
 }
+
 .logo:hover:after {
 	opacity: 1;
 	transform: translateY(0);
@@ -237,6 +231,7 @@ header .container{
 	transition: all .2s ease;
 
 }
+
 .nav__item:hover:after {
 		opacity: 1;
 		height: 3px;
@@ -697,9 +692,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-
-
-
 .number__button {
 	width: 35px;
 	height: 35px;
@@ -708,11 +700,6 @@ input[type=number]::-webkit-outer-spin-button {
 	background-color: #fff;
 	cursor: pointer;
 }
-
-
-
-
-
 
 .book__subtotal {
 	font-size: 30px;
@@ -748,17 +735,11 @@ input[type=number]::-webkit-outer-spin-button {
 	flex-direction: column;
 }
 
-
-
-
-
 .contacts__text {
   font-size: 10px;
   color: #f45e1f;
   text-transform: uppercase;
   line-height: 2.4;
-
-
 }
 
 .book__user-contacts input{
@@ -850,8 +831,7 @@ input[type=number]::-webkit-outer-spin-button {
 .testimonial__img {
 	margin-bottom: 20px;
 }
-.testimonial-img {}
-	
+
 .testimonial__text {
 	color: #273164;
 	font-size: 20px;
@@ -859,7 +839,7 @@ input[type=number]::-webkit-outer-spin-button {
 	margin-bottom: 40px;
 	flex: 1 1 auto;
 }
-.testimonial__author {}
+
 .author__name {
 	font-size: 15px;
 	font-weight: 600;
@@ -874,6 +854,7 @@ input[type=number]::-webkit-outer-spin-button {
 .slick-list {
 	transform: translateX(240px);
 }
+
 /* Лента слайдов */
 .slick-track{
 	display: flex;
@@ -1099,9 +1080,8 @@ h2.footer__column__title {
 		display: block;
 		margin: 0 auto;
 		margin-top: 10px;
-/*		position: absolute;
-		right: 0;*/
 	}
+	
 	/* стилизуем кнопку */
 	/* скрываем чекбокс */
 	#menu__toggle {
@@ -1139,9 +1119,6 @@ h2.footer__column__title {
 	  top: 8px;
 	}
 	
-
-	
-	
 	/* контейнер меню */
 	nav {
 	  display: flex;
@@ -1170,6 +1147,7 @@ h2.footer__column__title {
 		opacity: 1;
 		transform: none;
 	}
+	
 	/* элементы меню */
 	.nav__link {
 		align-items: center;
@@ -1212,7 +1190,6 @@ h2.footer__column__title {
 	}
 	
 	.learn{
-/*		margin-top: 1%;*/
 		margin: 1% auto 10% auto;
 		width: 90%;
 		max-width: 526px;
@@ -1318,9 +1295,6 @@ h2.footer__column__title {
 	}
 }
 
-/*@media (max-width: 650px) {
-}
-*/
 @media screen and (max-width: 500px){
 
 
